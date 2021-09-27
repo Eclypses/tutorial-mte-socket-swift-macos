@@ -58,10 +58,10 @@ steps:
 - task: CopyFiles@2
   displayName: 'Copy MTE Wrapper Files'
   inputs:
-    SourceFolder: 'mtewrapper'
+    SourceFolder: 'package-swift-mte'
     Contents: |
-      'package-swift-mte/Core/*.swift' 
-      '!package-swift-mte/Core/MteArm64.swift'
+      'Core/*.swift' 
+      '!Core/MteArm64.swift'
     TargetFolder: 'MTE'
     CleanTargetFolder: false
     OverWrite: true
