@@ -18,6 +18,9 @@ resources:
   - repository: mtelibs
     type: git
     name: Eclypses/mte-libs
+  - repository: mtewrapper
+    type: git
+    name: Eclypses/package-swift-mte
 
 pool: 'MTE-MacOS'
 
@@ -47,6 +50,15 @@ steps:
     Contents: '**'
     TargetFolder: 'MTE/include'
     CleanTargetFolder: true
+    OverWrite: true
+
+- task: CopyFiles@2
+  displayName: 'Copy MTE Wrapper Files'
+  inputs:
+    SourceFolder: 'mtewrapper'
+    Contents: 'Core/*.swift'
+    TargetFolder: 'MTE'
+    CleanTargetFolder: false
     OverWrite: true
 
 - task: Xcode@5
