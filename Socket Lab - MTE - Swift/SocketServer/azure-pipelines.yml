@@ -9,7 +9,7 @@ trigger:
 variables:
     system_accesstoken: $(System.AccessToken)
     scheme: 'SocketServer'
-    sdk: 'My Mac'
+    sdk: 'macos'
     configuration: 'Debug'
     workspace: 'SocketServer.xcodeproj'
 
@@ -58,6 +58,4 @@ steps:
     configuration: '$(configuration)'
     xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
     xcWorkspacePath: '**/$(workspace)'
-    destinationPlatformOption: 'MacOS'
-    destinationSimulators: 'My Mac'
     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
