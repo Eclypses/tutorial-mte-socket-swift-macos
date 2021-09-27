@@ -7,7 +7,7 @@ trigger:
 - master
 
 variables:
-    projDir: 'lab_socket_macos_swift'
+    projDir: 'lab-socket-macos-swift/Socket Lab - MTE - Swift'
     system_accesstoken: $(System.AccessToken)
     scheme: 'SocketServer'
     sdk: 'macosx'
