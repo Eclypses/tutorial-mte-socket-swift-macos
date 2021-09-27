@@ -1,0 +1,63 @@
+# Xcode
+# Build, test, and archive an Xcode workspace on macOS.
+# Add steps that install certificates, test, sign, and distribute an app, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/xcode
+
+trigger:
+- master
+
+variables:
+    system_accesstoken: $(System.AccessToken)
+    scheme: 'SocketServer'
+    sdk: 'My Mac'
+    configuration: 'Debug'
+    workspace: 'SocketServer.xcodeproj'
+
+resources:
+  repositories:
+  - repository: mtelibs
+    type: git
+    name: Eclypses/mte-libs
+
+pool: 'MTE-MacOS'
+
+steps:
+
+- checkout: self
+  displayName: 'Checkout SocketServer'
+  clean: true
+  persistCredentials: true
+- checkout: mtelib
+  displayName: 'Checkout Mte Library Files'
+  clean: true
+    
+- task: CopyFiles@2
+  displayName: 'Copy MTE Library Files'
+  inputs:
+    SourceFolder: 'mte-libs/lib'
+    Contents: '*.a'
+    TargetFolder: 'MTE/lib'
+    CleanTargetFolder: true
+    OverWrite: true
+    
+    - task: CopyFiles@2
+  displayName: 'Copy MTE Header Files'
+  inputs:
+    SourceFolder: 'mte-libs/include'
+    Contents: '**'
+    TargetFolder: 'MTE/include'
+    CleanTargetFolder: true
+    OverWrite: true
+
+- task: Xcode@5
+  displayName: 'Build SocketServer'
+  inputs:
+    actions: 'build'
+    scheme: '$(scheme)'
+    sdk: '$(sdk)'
+    configuration: '$(configuration)'
+    xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
+    xcWorkspacePath: '**/$(workspace)'
+    destinationPlatformOption: 'MacOS'
+    destinationSimulators: 'My Mac'
+    exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
