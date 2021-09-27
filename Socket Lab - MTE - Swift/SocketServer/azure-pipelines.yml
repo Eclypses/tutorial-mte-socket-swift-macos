@@ -9,7 +9,7 @@ trigger:
 variables:
     system_accesstoken: $(System.AccessToken)
     scheme: 'SocketServer'
-    sdk: 'macos'
+    # sdk: 'macos'
     configuration: 'Debug'
     workspace: 'SocketServer.xcodeproj'
 
@@ -54,8 +54,8 @@ steps:
   inputs:
     actions: 'build'
     scheme: '$(scheme)'
-    sdk: '$(sdk)'
+    # sdk: '$(sdk)'
     configuration: '$(configuration)'
     xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
     xcWorkspacePath: '**/$(workspace)'
-    exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
+    # exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
