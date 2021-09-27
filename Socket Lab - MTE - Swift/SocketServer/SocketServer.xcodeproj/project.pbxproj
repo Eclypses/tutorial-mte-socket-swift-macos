@@ -44,7 +44,6 @@
 		D075181A260D0DEE0091CFB3 /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		D075181C260D0DEE0091CFB3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D075181D260D0DEE0091CFB3 /* GeneralHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralHelpers.swift; sourceTree = "<group>"; };
-		D07FB58126961459004D1034 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		D07FB58326961459004D1034 /* mte_flen_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_flen_enc.h; sourceTree = "<group>"; };
 		D07FB58426961459004D1034 /* mte_verifiers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_verifiers.h; sourceTree = "<group>"; };
 		D07FB58526961459004D1034 /* mte_mke_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_mke_dec.h; sourceTree = "<group>"; };
@@ -79,7 +78,6 @@
 		D07FB5A426961459004D1034 /* libmte_flen.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmte_flen.a; sourceTree = "<group>"; };
 		D07FB5A526961459004D1034 /* libmte_mteb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmte_mteb.a; sourceTree = "<group>"; };
 		D07FB5A626961459004D1034 /* MteEnc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MteEnc.swift; sourceTree = "<group>"; };
-		D07FB5B326964EBE004D1034 /* MacOS Swift - Update MTE Version and Language Wrapper.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MacOS Swift - Update MTE Version and Language Wrapper.docx"; sourceTree = "<group>"; };
 		D09D29EF26F3EF7D00800813 /* SocketServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09D29F126F3EF7D00800813 /* SocketServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketServerTests.swift; sourceTree = "<group>"; };
 		D09D29F326F3EF7D00800813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -154,8 +152,6 @@
 		D07FB54E269612FA004D1034 /* MTE */ = {
 			isa = PBXGroup;
 			children = (
-				D07FB5B326964EBE004D1034 /* MacOS Swift - Update MTE Version and Language Wrapper.docx */,
-				D07FB58126961459004D1034 /* Bridging-Header.h */,
 				D07FB58226961459004D1034 /* include */,
 				D07FB59C26961459004D1034 /* lib */,
 				D07FB59B26961459004D1034 /* MteBase.swift */,
@@ -471,7 +467,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = ../MTE/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "../MTE/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "../Common/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -492,7 +488,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = ../MTE/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "../MTE/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "../Common/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
