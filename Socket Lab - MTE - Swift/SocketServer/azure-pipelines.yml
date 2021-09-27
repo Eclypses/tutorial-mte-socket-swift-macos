@@ -62,6 +62,7 @@ steps:
     SourceFolder: 'package-swift-mte'
     Contents: 'Core/**' 
     TargetFolder: '$(projDir)/MTE'
+    flattenFolders: true
     CleanTargetFolder: false
     OverWrite: true
 
