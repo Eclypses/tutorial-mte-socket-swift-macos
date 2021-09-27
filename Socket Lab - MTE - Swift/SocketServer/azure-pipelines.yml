@@ -33,6 +33,9 @@ steps:
 - checkout: mtelibs
   displayName: 'Checkout Mte Library Files'
   clean: true
+- checkout: mtewrapper
+  displayName: 'Checkout Mte Wrapper Files'
+  clean: true
     
 - task: CopyFiles@2
   displayName: 'Copy MTE Library Files'
