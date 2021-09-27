@@ -40,7 +40,7 @@ steps:
     CleanTargetFolder: true
     OverWrite: true
     
-    - task: CopyFiles@2
+- task: CopyFiles@2
   displayName: 'Copy MTE Header Files'
   inputs:
     SourceFolder: 'mte-libs/include'
