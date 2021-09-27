@@ -27,7 +27,7 @@ steps:
   displayName: 'Checkout SocketServer'
   clean: true
   persistCredentials: true
-- checkout: mtelib
+- checkout: mtelibs
   displayName: 'Checkout Mte Library Files'
   clean: true
     
