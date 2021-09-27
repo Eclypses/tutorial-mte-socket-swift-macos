@@ -7,6 +7,7 @@ trigger:
 - master
 
 variables:
+    projDir: 'lab_socket_macos_swift'
     system_accesstoken: $(System.AccessToken)
     scheme: 'SocketServer'
     sdk: 'macosx'
@@ -42,7 +43,7 @@ steps:
   inputs:
     SourceFolder: 'mte-libs/lib'
     Contents: '*.a'
-    TargetFolder: 'MTE/lib'
+    TargetFolder: '$(projDir)/MTE/lib'
     CleanTargetFolder: true
     OverWrite: true
     
@@ -51,7 +52,7 @@ steps:
   inputs:
     SourceFolder: 'mte-libs/include'
     Contents: '**'
-    TargetFolder: 'MTE/include'
+    TargetFolder: '$(projDir)/MTE/include'
     CleanTargetFolder: true
     OverWrite: true
 
@@ -62,7 +63,7 @@ steps:
     Contents: |
       'Core/*.swift' 
       '!Core/MteArm64.swift'
-    TargetFolder: 'MTE'
+    TargetFolder: '$(projDir)/MTE'
     CleanTargetFolder: false
     OverWrite: true
 
