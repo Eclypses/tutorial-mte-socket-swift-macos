@@ -69,7 +69,7 @@ steps:
 - task: Xcode@5
   displayName: 'Build SocketServer'
   inputs:
-    actions: 'build test'
+    actions: 'build'
     scheme: '$(scheme)'
     sdk: '$(sdk)'
     configuration: '$(configuration)'
