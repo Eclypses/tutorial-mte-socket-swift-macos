@@ -509,7 +509,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eclypses.SocketServerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "../MTE/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "../Common/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -530,7 +530,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eclypses.SocketServerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "../MTE/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "../Common/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
