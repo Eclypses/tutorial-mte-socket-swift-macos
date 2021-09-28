@@ -8,7 +8,6 @@
 import Foundation
 import Network
 
-
 print("Starting Swift Socket Client using MTE Version \(MteBase.getVersion())")
 
 // Set ipAddress
