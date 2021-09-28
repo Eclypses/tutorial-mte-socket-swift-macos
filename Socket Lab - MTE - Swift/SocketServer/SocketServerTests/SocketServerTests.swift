@@ -7,7 +7,7 @@
 
 
 import XCTest
-import SocketServer
+@testable import SocketServer
 
 class SocketServerTests: XCTestCase {
 
