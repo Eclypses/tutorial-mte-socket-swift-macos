@@ -74,6 +74,6 @@ steps:
     sdk: '$(sdk)'
     configuration: '$(configuration)'
     xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
-    xcWorkspacePath: '**/$(workspace)'
+    xcWorkspacePath: 'Socket Lab - MTE - Swift/SocketServer/$(workspace)'
     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
 
