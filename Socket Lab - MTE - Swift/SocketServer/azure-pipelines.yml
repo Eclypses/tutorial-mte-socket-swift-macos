@@ -81,7 +81,7 @@ steps:
   displayName: 'Build and Test SocketServerTest'
   inputs:
     actions: 'build test'
-    scheme: '$(scheme)Test'
+    scheme: '$(scheme)Tests'
     sdk: '$(sdk)'
     configuration: '$(configuration)'
     xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
