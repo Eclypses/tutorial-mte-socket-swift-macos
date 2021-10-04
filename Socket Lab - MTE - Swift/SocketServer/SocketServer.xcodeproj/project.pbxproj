@@ -81,7 +81,6 @@
 		D09D29EF26F3EF7D00800813 /* SocketServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09D29F126F3EF7D00800813 /* SocketServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketServerTests.swift; sourceTree = "<group>"; };
 		D09D29F326F3EF7D00800813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0F83D2E270271EA00096BA6 /* azure-pipelines.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = "azure-pipelines.yml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +110,6 @@
 		D075174E2609495C0091CFB3 = {
 			isa = PBXGroup;
 			children = (
-				D0F83D2E270271EA00096BA6 /* azure-pipelines.yml */,
 				D07FB54E269612FA004D1034 /* MTE */,
 				D0751819260D0DEE0091CFB3 /* Common */,
 				D07517592609495C0091CFB3 /* SocketServer */,

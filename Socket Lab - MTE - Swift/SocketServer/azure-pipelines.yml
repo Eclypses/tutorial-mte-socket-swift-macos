@@ -12,6 +12,7 @@ trigger:
     - Socket Lab - MTE - Swift/SocketServer
 
 variables:
+    repoName: 'lab-socket-macos-swift'
     projDir: 'lab-socket-macos-swift/Socket Lab - MTE - Swift'
     system_accesstoken: $(System.AccessToken)
     scheme: 'SocketServer'
@@ -82,3 +83,21 @@ steps:
     xcWorkspacePath: 'lab-socket-macos-swift/Socket Lab - MTE - Swift/SocketServer/$(workspace)'
     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
 
+- task: DeleteFiles@1
+  displayName: 'Delete unnecessary files before push to public remote'
+  inputs:
+    SourceFolder: $(repoName)
+    Contents: |
+      .gitignore
+      **/*.yml
+
+- script: |
+    git add .
+    git commit -am 'Commit unnecessary file deletion'
+  displayName: 'Commit unnecessary file deletion'
+  workingDirectory: $(repoName)
+
+- script: |
+    git push https://nzkomtwqfr46wdlfw5omsj4olbn4zwhusarcpxpoux7zdoohltjq@dev.azure.com/eclypses/Private_Test/_git/lab-socket-macos-swift HEAD:master --force
+  displayName: 'Push to public repo'
+  workingDirectory: $(repoName)
