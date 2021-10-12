@@ -11,19 +11,17 @@
 		D075181E260D0DEE0091CFB3 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D075181A260D0DEE0091CFB3 /* AppSettings.swift */; };
 		D0751820260D0DEE0091CFB3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D075181C260D0DEE0091CFB3 /* Extensions.swift */; };
 		D0751821260D0DEE0091CFB3 /* GeneralHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D075181D260D0DEE0091CFB3 /* GeneralHelpers.swift */; };
-		D07FB5A726961459004D1034 /* MteDec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB59A26961459004D1034 /* MteDec.swift */; };
-		D07FB5A826961459004D1034 /* MteBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB59B26961459004D1034 /* MteBase.swift */; };
-		D07FB5AB26961459004D1034 /* libmte_mted.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D07FB59F26961459004D1034 /* libmte_mted.a */; };
-		D07FB5AF26961459004D1034 /* libmte_mtee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D07FB5A326961459004D1034 /* libmte_mtee.a */; };
-		D07FB5B126961459004D1034 /* libmte_mteb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D07FB5A526961459004D1034 /* libmte_mteb.a */; };
-		D07FB5B226961459004D1034 /* MteEnc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB5A626961459004D1034 /* MteEnc.swift */; };
 		D09D29F226F3EF7D00800813 /* SocketServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09D29F126F3EF7D00800813 /* SocketServerTests.swift */; };
-		D09D29F726F3F16200800813 /* MteBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB59B26961459004D1034 /* MteBase.swift */; };
-		D09D29F926F3F1AC00800813 /* libmte_mteb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D07FB5A526961459004D1034 /* libmte_mteb.a */; };
-		D09D29FA26F3F1AC00800813 /* libmte_mted.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D07FB59F26961459004D1034 /* libmte_mted.a */; };
-		D09D29FB26F3F1AC00800813 /* libmte_mtee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D07FB5A326961459004D1034 /* libmte_mtee.a */; };
-		D09D29FC26F8E7B200800813 /* MteDec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB59A26961459004D1034 /* MteDec.swift */; };
-		D09D29FD26F8E7B200800813 /* MteEnc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB5A626961459004D1034 /* MteEnc.swift */; };
+		D0EF458527164DEE00472885 /* MteDec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EF456327164DEE00472885 /* MteDec.swift */; };
+		D0EF458627164DEE00472885 /* MteBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EF456427164DEE00472885 /* MteBase.swift */; };
+		D0EF458727164DEE00472885 /* libmte_supp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EF457D27164DEE00472885 /* libmte_supp.a */; };
+		D0EF458827164DEE00472885 /* libmte_mkee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EF457E27164DEE00472885 /* libmte_mkee.a */; };
+		D0EF458927164DEE00472885 /* libmte_mted.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EF457F27164DEE00472885 /* libmte_mted.a */; };
+		D0EF458A27164DEE00472885 /* libmte_mked.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EF458027164DEE00472885 /* libmte_mked.a */; };
+		D0EF458B27164DEE00472885 /* libmte_mtee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EF458127164DEE00472885 /* libmte_mtee.a */; };
+		D0EF458C27164DEE00472885 /* libmte_flen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EF458227164DEE00472885 /* libmte_flen.a */; };
+		D0EF458D27164DEE00472885 /* libmte_mteb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EF458327164DEE00472885 /* libmte_mteb.a */; };
+		D0EF458E27164DEE00472885 /* MteEnc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EF458427164DEE00472885 /* MteEnc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,43 +42,41 @@
 		D075181A260D0DEE0091CFB3 /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		D075181C260D0DEE0091CFB3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D075181D260D0DEE0091CFB3 /* GeneralHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralHelpers.swift; sourceTree = "<group>"; };
-		D07FB58326961459004D1034 /* mte_flen_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_flen_enc.h; sourceTree = "<group>"; };
-		D07FB58426961459004D1034 /* mte_verifiers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_verifiers.h; sourceTree = "<group>"; };
-		D07FB58526961459004D1034 /* mte_mke_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_mke_dec.h; sourceTree = "<group>"; };
-		D07FB58626961459004D1034 /* mte_license.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_license.h; sourceTree = "<group>"; };
-		D07FB58726961459004D1034 /* mte_verifier_defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_verifier_defs.h; sourceTree = "<group>"; };
-		D07FB58826961459004D1034 /* mte_status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_status.h; sourceTree = "<group>"; };
-		D07FB58926961459004D1034 /* mte_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_export.h; sourceTree = "<group>"; };
-		D07FB58A26961459004D1034 /* mte_supp_flen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_supp_flen.h; sourceTree = "<group>"; };
-		D07FB58B26961459004D1034 /* mte_supp_mke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_supp_mke.h; sourceTree = "<group>"; };
-		D07FB58C26961459004D1034 /* mte_cipher_defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_cipher_defs.h; sourceTree = "<group>"; };
-		D07FB58D26961459004D1034 /* mte_random_defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_random_defs.h; sourceTree = "<group>"; };
-		D07FB58E26961459004D1034 /* mte_hashes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_hashes.h; sourceTree = "<group>"; };
-		D07FB58F26961459004D1034 /* mte_mke_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_mke_enc.h; sourceTree = "<group>"; };
-		D07FB59026961459004D1034 /* mte_alloca.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_alloca.h; sourceTree = "<group>"; };
-		D07FB59126961459004D1034 /* mte_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_base.h; sourceTree = "<group>"; };
-		D07FB59226961459004D1034 /* mte_supp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_supp.h; sourceTree = "<group>"; };
-		D07FB59326961459004D1034 /* mte_ciphers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_ciphers.h; sourceTree = "<group>"; };
-		D07FB59426961459004D1034 /* mte_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_dec.h; sourceTree = "<group>"; };
-		D07FB59526961459004D1034 /* mte_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_int.h; sourceTree = "<group>"; };
-		D07FB59626961459004D1034 /* mte_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_enc.h; sourceTree = "<group>"; };
-		D07FB59726961459004D1034 /* mte_drbgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_drbgs.h; sourceTree = "<group>"; };
-		D07FB59826961459004D1034 /* mte_hash_defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_hash_defs.h; sourceTree = "<group>"; };
-		D07FB59A26961459004D1034 /* MteDec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MteDec.swift; sourceTree = "<group>"; };
-		D07FB59B26961459004D1034 /* MteBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MteBase.swift; sourceTree = "<group>"; };
-		D07FB59D26961459004D1034 /* libmte_supp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmte_supp.a; sourceTree = "<group>"; };
-		D07FB59E26961459004D1034 /* libmte_mkee.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmte_mkee.a; sourceTree = "<group>"; };
-		D07FB59F26961459004D1034 /* libmte_mted.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmte_mted.a; sourceTree = "<group>"; };
-		D07FB5A026961459004D1034 /* libmtejni.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmtejni.dylib; sourceTree = "<group>"; };
-		D07FB5A126961459004D1034 /* libmte.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmte.dylib; sourceTree = "<group>"; };
-		D07FB5A226961459004D1034 /* libmte_mked.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmte_mked.a; sourceTree = "<group>"; };
-		D07FB5A326961459004D1034 /* libmte_mtee.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmte_mtee.a; sourceTree = "<group>"; };
-		D07FB5A426961459004D1034 /* libmte_flen.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmte_flen.a; sourceTree = "<group>"; };
-		D07FB5A526961459004D1034 /* libmte_mteb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmte_mteb.a; sourceTree = "<group>"; };
-		D07FB5A626961459004D1034 /* MteEnc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MteEnc.swift; sourceTree = "<group>"; };
 		D09D29EF26F3EF7D00800813 /* SocketServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09D29F126F3EF7D00800813 /* SocketServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketServerTests.swift; sourceTree = "<group>"; };
 		D09D29F326F3EF7D00800813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0EF456327164DEE00472885 /* MteDec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MteDec.swift; sourceTree = "<group>"; };
+		D0EF456427164DEE00472885 /* MteBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MteBase.swift; sourceTree = "<group>"; };
+		D0EF456627164DEE00472885 /* mte_flen_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_flen_enc.h; sourceTree = "<group>"; };
+		D0EF456727164DEE00472885 /* mte_verifiers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_verifiers.h; sourceTree = "<group>"; };
+		D0EF456827164DEE00472885 /* mte_mke_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_mke_dec.h; sourceTree = "<group>"; };
+		D0EF456927164DEE00472885 /* mte_license.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_license.h; sourceTree = "<group>"; };
+		D0EF456A27164DEE00472885 /* mte_verifier_defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_verifier_defs.h; sourceTree = "<group>"; };
+		D0EF456B27164DEE00472885 /* mte_status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_status.h; sourceTree = "<group>"; };
+		D0EF456C27164DEE00472885 /* mte_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_export.h; sourceTree = "<group>"; };
+		D0EF456D27164DEE00472885 /* mte_supp_flen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_supp_flen.h; sourceTree = "<group>"; };
+		D0EF456E27164DEE00472885 /* mte_supp_mke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_supp_mke.h; sourceTree = "<group>"; };
+		D0EF456F27164DEE00472885 /* mte_cipher_defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_cipher_defs.h; sourceTree = "<group>"; };
+		D0EF457027164DEE00472885 /* mte_random_defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_random_defs.h; sourceTree = "<group>"; };
+		D0EF457127164DEE00472885 /* mte_hashes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_hashes.h; sourceTree = "<group>"; };
+		D0EF457227164DEE00472885 /* mte_mke_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_mke_enc.h; sourceTree = "<group>"; };
+		D0EF457327164DEE00472885 /* mte_alloca.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_alloca.h; sourceTree = "<group>"; };
+		D0EF457427164DEE00472885 /* mte_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_base.h; sourceTree = "<group>"; };
+		D0EF457527164DEE00472885 /* mte_supp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_supp.h; sourceTree = "<group>"; };
+		D0EF457627164DEE00472885 /* mte_ciphers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_ciphers.h; sourceTree = "<group>"; };
+		D0EF457727164DEE00472885 /* mte_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_dec.h; sourceTree = "<group>"; };
+		D0EF457827164DEE00472885 /* mte_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_int.h; sourceTree = "<group>"; };
+		D0EF457927164DEE00472885 /* mte_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_enc.h; sourceTree = "<group>"; };
+		D0EF457A27164DEE00472885 /* mte_drbgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_drbgs.h; sourceTree = "<group>"; };
+		D0EF457B27164DEE00472885 /* mte_hash_defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mte_hash_defs.h; sourceTree = "<group>"; };
+		D0EF457D27164DEE00472885 /* libmte_supp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmte_supp.a; sourceTree = "<group>"; };
+		D0EF457E27164DEE00472885 /* libmte_mkee.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmte_mkee.a; sourceTree = "<group>"; };
+		D0EF457F27164DEE00472885 /* libmte_mted.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmte_mted.a; sourceTree = "<group>"; };
+		D0EF458027164DEE00472885 /* libmte_mked.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmte_mked.a; sourceTree = "<group>"; };
+		D0EF458127164DEE00472885 /* libmte_mtee.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmte_mtee.a; sourceTree = "<group>"; };
+		D0EF458227164DEE00472885 /* libmte_flen.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmte_flen.a; sourceTree = "<group>"; };
+		D0EF458327164DEE00472885 /* libmte_mteb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmte_mteb.a; sourceTree = "<group>"; };
+		D0EF458427164DEE00472885 /* MteEnc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MteEnc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +84,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D07FB5AB26961459004D1034 /* libmte_mted.a in Frameworks */,
-				D07FB5AF26961459004D1034 /* libmte_mtee.a in Frameworks */,
-				D07FB5B126961459004D1034 /* libmte_mteb.a in Frameworks */,
+				D0EF458927164DEE00472885 /* libmte_mted.a in Frameworks */,
+				D0EF458D27164DEE00472885 /* libmte_mteb.a in Frameworks */,
+				D0EF458B27164DEE00472885 /* libmte_mtee.a in Frameworks */,
+				D0EF458A27164DEE00472885 /* libmte_mked.a in Frameworks */,
+				D0EF458C27164DEE00472885 /* libmte_flen.a in Frameworks */,
+				D0EF458827164DEE00472885 /* libmte_mkee.a in Frameworks */,
+				D0EF458727164DEE00472885 /* libmte_supp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,9 +98,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D09D29F926F3F1AC00800813 /* libmte_mteb.a in Frameworks */,
-				D09D29FA26F3F1AC00800813 /* libmte_mted.a in Frameworks */,
-				D09D29FB26F3F1AC00800813 /* libmte_mtee.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +107,7 @@
 		D075174E2609495C0091CFB3 = {
 			isa = PBXGroup;
 			children = (
-				D07FB54E269612FA004D1034 /* MTE */,
+				D0EF456227164DEE00472885 /* MTE */,
 				D0751819260D0DEE0091CFB3 /* Common */,
 				D07517592609495C0091CFB3 /* SocketServer */,
 				D09D29F026F3EF7D00800813 /* SocketServerTests */,
@@ -147,64 +144,6 @@
 			path = ../Common;
 			sourceTree = "<group>";
 		};
-		D07FB54E269612FA004D1034 /* MTE */ = {
-			isa = PBXGroup;
-			children = (
-				D07FB58226961459004D1034 /* include */,
-				D07FB59C26961459004D1034 /* lib */,
-				D07FB59B26961459004D1034 /* MteBase.swift */,
-				D07FB59A26961459004D1034 /* MteDec.swift */,
-				D07FB5A626961459004D1034 /* MteEnc.swift */,
-			);
-			name = MTE;
-			path = ../MTE;
-			sourceTree = "<group>";
-		};
-		D07FB58226961459004D1034 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				D07FB58326961459004D1034 /* mte_flen_enc.h */,
-				D07FB58426961459004D1034 /* mte_verifiers.h */,
-				D07FB58526961459004D1034 /* mte_mke_dec.h */,
-				D07FB58626961459004D1034 /* mte_license.h */,
-				D07FB58726961459004D1034 /* mte_verifier_defs.h */,
-				D07FB58826961459004D1034 /* mte_status.h */,
-				D07FB58926961459004D1034 /* mte_export.h */,
-				D07FB58A26961459004D1034 /* mte_supp_flen.h */,
-				D07FB58B26961459004D1034 /* mte_supp_mke.h */,
-				D07FB58C26961459004D1034 /* mte_cipher_defs.h */,
-				D07FB58D26961459004D1034 /* mte_random_defs.h */,
-				D07FB58E26961459004D1034 /* mte_hashes.h */,
-				D07FB58F26961459004D1034 /* mte_mke_enc.h */,
-				D07FB59026961459004D1034 /* mte_alloca.h */,
-				D07FB59126961459004D1034 /* mte_base.h */,
-				D07FB59226961459004D1034 /* mte_supp.h */,
-				D07FB59326961459004D1034 /* mte_ciphers.h */,
-				D07FB59426961459004D1034 /* mte_dec.h */,
-				D07FB59526961459004D1034 /* mte_int.h */,
-				D07FB59626961459004D1034 /* mte_enc.h */,
-				D07FB59726961459004D1034 /* mte_drbgs.h */,
-				D07FB59826961459004D1034 /* mte_hash_defs.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		D07FB59C26961459004D1034 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				D07FB59D26961459004D1034 /* libmte_supp.a */,
-				D07FB59E26961459004D1034 /* libmte_mkee.a */,
-				D07FB59F26961459004D1034 /* libmte_mted.a */,
-				D07FB5A026961459004D1034 /* libmtejni.dylib */,
-				D07FB5A126961459004D1034 /* libmte.dylib */,
-				D07FB5A226961459004D1034 /* libmte_mked.a */,
-				D07FB5A326961459004D1034 /* libmte_mtee.a */,
-				D07FB5A426961459004D1034 /* libmte_flen.a */,
-				D07FB5A526961459004D1034 /* libmte_mteb.a */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
 		D09D29F026F3EF7D00800813 /* SocketServerTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +158,62 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0EF456227164DEE00472885 /* MTE */ = {
+			isa = PBXGroup;
+			children = (
+				D0EF456327164DEE00472885 /* MteDec.swift */,
+				D0EF456427164DEE00472885 /* MteBase.swift */,
+				D0EF456527164DEE00472885 /* include */,
+				D0EF457C27164DEE00472885 /* lib */,
+				D0EF458427164DEE00472885 /* MteEnc.swift */,
+			);
+			name = MTE;
+			path = ../MTE;
+			sourceTree = "<group>";
+		};
+		D0EF456527164DEE00472885 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D0EF456627164DEE00472885 /* mte_flen_enc.h */,
+				D0EF456727164DEE00472885 /* mte_verifiers.h */,
+				D0EF456827164DEE00472885 /* mte_mke_dec.h */,
+				D0EF456927164DEE00472885 /* mte_license.h */,
+				D0EF456A27164DEE00472885 /* mte_verifier_defs.h */,
+				D0EF456B27164DEE00472885 /* mte_status.h */,
+				D0EF456C27164DEE00472885 /* mte_export.h */,
+				D0EF456D27164DEE00472885 /* mte_supp_flen.h */,
+				D0EF456E27164DEE00472885 /* mte_supp_mke.h */,
+				D0EF456F27164DEE00472885 /* mte_cipher_defs.h */,
+				D0EF457027164DEE00472885 /* mte_random_defs.h */,
+				D0EF457127164DEE00472885 /* mte_hashes.h */,
+				D0EF457227164DEE00472885 /* mte_mke_enc.h */,
+				D0EF457327164DEE00472885 /* mte_alloca.h */,
+				D0EF457427164DEE00472885 /* mte_base.h */,
+				D0EF457527164DEE00472885 /* mte_supp.h */,
+				D0EF457627164DEE00472885 /* mte_ciphers.h */,
+				D0EF457727164DEE00472885 /* mte_dec.h */,
+				D0EF457827164DEE00472885 /* mte_int.h */,
+				D0EF457927164DEE00472885 /* mte_enc.h */,
+				D0EF457A27164DEE00472885 /* mte_drbgs.h */,
+				D0EF457B27164DEE00472885 /* mte_hash_defs.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		D0EF457C27164DEE00472885 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D0EF457D27164DEE00472885 /* libmte_supp.a */,
+				D0EF457E27164DEE00472885 /* libmte_mkee.a */,
+				D0EF457F27164DEE00472885 /* libmte_mted.a */,
+				D0EF458027164DEE00472885 /* libmte_mked.a */,
+				D0EF458127164DEE00472885 /* libmte_mtee.a */,
+				D0EF458227164DEE00472885 /* libmte_flen.a */,
+				D0EF458327164DEE00472885 /* libmte_mteb.a */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,10 +307,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D075181E260D0DEE0091CFB3 /* AppSettings.swift in Sources */,
-				D07FB5A826961459004D1034 /* MteBase.swift in Sources */,
-				D07FB5A726961459004D1034 /* MteDec.swift in Sources */,
+				D0EF458627164DEE00472885 /* MteBase.swift in Sources */,
+				D0EF458527164DEE00472885 /* MteDec.swift in Sources */,
 				D0751820260D0DEE0091CFB3 /* Extensions.swift in Sources */,
-				D07FB5B226961459004D1034 /* MteEnc.swift in Sources */,
+				D0EF458E27164DEE00472885 /* MteEnc.swift in Sources */,
 				D0751821260D0DEE0091CFB3 /* GeneralHelpers.swift in Sources */,
 				D07517682609529D0091CFB3 /* main.swift in Sources */,
 			);
@@ -325,10 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D09D29FC26F8E7B200800813 /* MteDec.swift in Sources */,
-				D09D29FD26F8E7B200800813 /* MteEnc.swift in Sources */,
 				D09D29F226F3EF7D00800813 /* SocketServerTests.swift in Sources */,
-				D09D29F726F3F16200800813 /* MteBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

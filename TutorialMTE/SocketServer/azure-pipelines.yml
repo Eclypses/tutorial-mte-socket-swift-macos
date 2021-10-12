@@ -12,8 +12,8 @@ trigger:
     - Socket Lab - MTE - Swift/SocketServer
 
 variables:
-    repoName: 'lab-socket-macos-swift'
-    projDir: 'lab-socket-macos-swift/Socket Lab - MTE - Swift'
+    repoName: 'tutorial-mte-socket-swift-macos'
+    projDir: '$(repoName)/TutorialMTE'
     system_accesstoken: $(System.AccessToken)
     scheme: 'SocketServer'
     sdk: 'macosx'
@@ -24,10 +24,10 @@ resources:
   repositories:
   - repository: mtelibs
     type: git
-    name: Eclypses/mte-libs
+    name: Eclypses/package-swift-mte-macos
   - repository: mtewrapper
     type: git
-    name: Eclypses/package-swift-mte
+    name: Eclypses/package-swift-mte-wrapper
 
 pool: 'MTE-MacOS'
 
@@ -80,7 +80,7 @@ steps:
     sdk: '$(sdk)'
     configuration: '$(configuration)'
     xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
-    xcWorkspacePath: 'lab-socket-macos-swift/Socket Lab - MTE - Swift/SocketServer/$(workspace)'
+    xcWorkspacePath: '$(projDir)/SocketServer/$(workspace)'
     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
 
 - task: DeleteFiles@1
@@ -98,6 +98,6 @@ steps:
   workingDirectory: $(repoName)
 
 - script: |
-    git push https://nzkomtwqfr46wdlfw5omsj4olbn4zwhusarcpxpoux7zdoohltjq@dev.azure.com/eclypses/Private_Test/_git/lab-socket-macos-swift HEAD:master --force
+    git push https://nzkomtwqfr46wdlfw5omsj4olbn4zwhusarcpxpoux7zdoohltjq@dev.azure.com/eclypses/Private_Test/_git/tutorial-mte-socket-swift-macos HEAD:master --force
   displayName: 'Push to public repo'
   workingDirectory: $(repoName)
