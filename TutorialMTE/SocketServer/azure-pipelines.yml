@@ -47,7 +47,7 @@ steps:
 - task: CopyFiles@2
   displayName: 'Copy MTE Library Files'
   inputs:
-    SourceFolder: 'mte-libs/lib'
+    SourceFolder: 'package-swift-mte-macos/lib'
     Contents: '*.a'
     TargetFolder: '$(projDir)/MTE/lib'
     CleanTargetFolder: true
@@ -56,7 +56,7 @@ steps:
 - task: CopyFiles@2
   displayName: 'Copy MTE Header Files'
   inputs:
-    SourceFolder: 'mte-libs/include'
+    SourceFolder: 'package-swift-mte-macos/include'
     Contents: '**'
     TargetFolder: '$(projDir)/MTE/include'
     CleanTargetFolder: true
@@ -65,7 +65,7 @@ steps:
 - task: CopyFiles@2
   displayName: 'Copy MTE Wrapper Files'
   inputs:
-    SourceFolder: 'package-swift-mte'
+    SourceFolder: 'package-swift-mte-wrapper'
     Contents: 'Core/**' 
     TargetFolder: '$(projDir)/MTE'
     flattenFolders: true
