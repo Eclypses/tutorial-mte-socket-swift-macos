@@ -22,6 +22,12 @@
 		D0EF458C27164DEE00472885 /* libmte_flen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EF458227164DEE00472885 /* libmte_flen.a */; };
 		D0EF458D27164DEE00472885 /* libmte_mteb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EF458327164DEE00472885 /* libmte_mteb.a */; };
 		D0EF458E27164DEE00472885 /* MteEnc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EF458427164DEE00472885 /* MteEnc.swift */; };
+		D0EF459227175DBA00472885 /* libmte_mteb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EF458327164DEE00472885 /* libmte_mteb.a */; };
+		D0EF459327175DBD00472885 /* libmte_mtee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EF458127164DEE00472885 /* libmte_mtee.a */; };
+		D0EF459427175DC000472885 /* libmte_mted.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EF457F27164DEE00472885 /* libmte_mted.a */; };
+		D0EF459527175EB800472885 /* MteDec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EF456327164DEE00472885 /* MteDec.swift */; };
+		D0EF459627175EB800472885 /* MteBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EF456427164DEE00472885 /* MteBase.swift */; };
+		D0EF459727175EB800472885 /* MteEnc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EF458427164DEE00472885 /* MteEnc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -98,6 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EF459227175DBA00472885 /* libmte_mteb.a in Frameworks */,
+				D0EF459427175DC000472885 /* libmte_mted.a in Frameworks */,
+				D0EF459327175DBD00472885 /* libmte_mtee.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +329,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EF459527175EB800472885 /* MteDec.swift in Sources */,
+				D0EF459627175EB800472885 /* MteBase.swift in Sources */,
+				D0EF459727175EB800472885 /* MteEnc.swift in Sources */,
 				D09D29F226F3EF7D00800813 /* SocketServerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
