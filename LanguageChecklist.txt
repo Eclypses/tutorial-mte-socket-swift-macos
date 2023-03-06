@@ -1,0 +1,6 @@
+swift:2.0.1/c:2.0.0
+swift:2.0.1/c++:2.0.0
+swift:2.0.1/python:2.0.0
+swift:2.0.1/c#:2.0.0
+swift:2.0.1/java:2.0.0
+swift:2.0.1/go:2.0.1
