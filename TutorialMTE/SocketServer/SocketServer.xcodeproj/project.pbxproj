@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D049F97D2720B03400D69375 /* MteDec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049F9532720B03400D69375 /* MteDec.swift */; };
+		D049F97E2720B03400D69375 /* MteBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049F9542720B03400D69375 /* MteBase.swift */; };
+		D049F9892720B03400D69375 /* MteEnc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049F97C2720B03400D69375 /* MteEnc.swift */; };
+		D049F9BC2721B9B700D69375 /* MteDec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049F9532720B03400D69375 /* MteDec.swift */; };
+		D049F9BD2721B9BA00D69375 /* MteBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049F9542720B03400D69375 /* MteBase.swift */; };
+		D049F9BE2721B9BE00D69375 /* MteEnc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049F97C2720B03400D69375 /* MteEnc.swift */; };
+		D049FA7227232E1300D69375 /* MteMkeDec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049FA6F27232E1300D69375 /* MteMkeDec.swift */; };
+		D049FA7327232E1300D69375 /* MteMkeDec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049FA6F27232E1300D69375 /* MteMkeDec.swift */; };
+		D049FA7427232E1300D69375 /* MteMkeEnc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049FA7027232E1300D69375 /* MteMkeEnc.swift */; };
+		D049FA7527232E1300D69375 /* MteMkeEnc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049FA7027232E1300D69375 /* MteMkeEnc.swift */; };
+		D049FA7627232E1300D69375 /* MteFlenEnc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049FA7127232E1300D69375 /* MteFlenEnc.swift */; };
+		D049FA7727232E1300D69375 /* MteFlenEnc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049FA7127232E1300D69375 /* MteFlenEnc.swift */; };
+		D07517682609529D0091CFB3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07517672609529D0091CFB3 /* main.swift */; };
+		D075181E260D0DEE0091CFB3 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D075181A260D0DEE0091CFB3 /* AppSettings.swift */; };
+		D0751820260D0DEE0091CFB3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D075181C260D0DEE0091CFB3 /* Extensions.swift */; };
+		D0751821260D0DEE0091CFB3 /* GeneralHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D075181D260D0DEE0091CFB3 /* GeneralHelpers.swift */; };
+		D09D29F226F3EF7D00800813 /* SocketServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09D29F126F3EF7D00800813 /* SocketServerTests.swift */; };
+		D7088C402A0B401F00C2F7CA /* EcdhP256.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7088C3D2A0B401F00C2F7CA /* EcdhP256.swift */; };
+		D7088C6D2A0C5FA000C2F7CA /* libmtesupport-ecdh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7088C6C2A0C5FA000C2F7CA /* libmtesupport-ecdh.a */; };
+		D721E03628D2871F00F34124 /* include in Resources */ = {isa = PBXBuildFile; fileRef = D721E03528D2871F00F34124 /* include */; };
+		D721E03828D2872900F34124 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = D721E03728D2872900F34124 /* lib */; };
+		D721E04128D2882400F34124 /* libmte_mteb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D721E03928D2882400F34124 /* libmte_mteb.a */; };
+		D721E04228D2882400F34124 /* libmte_flen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D721E03A28D2882400F34124 /* libmte_flen.a */; };
+		D721E04428D2882400F34124 /* libmte_mtee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D721E03C28D2882400F34124 /* libmte_mtee.a */; };
+		D721E04528D2882400F34124 /* libmte_wrap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D721E03D28D2882400F34124 /* libmte_wrap.a */; };
+		D721E04628D2882400F34124 /* libmte_mked.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D721E03E28D2882400F34124 /* libmte_mked.a */; };
+		D721E04728D2882400F34124 /* libmte_mted.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D721E03F28D2882400F34124 /* libmte_mted.a */; };
+		D721E04828D2882400F34124 /* libmte_mkee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D721E04028D2882400F34124 /* libmte_mkee.a */; };
+		D74244E42A392E29008471F3 /* ServerSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74244E32A392E29008471F3 /* ServerSocketManager.swift */; };
+		D74244E62A3A5270008471F3 /* MteSetupInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74244E52A3A5270008471F3 /* MteSetupInfo.swift */; };
+		D74244E82A3A7E2E008471F3 /* ServerMteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74244E72A3A7E2E008471F3 /* ServerMteHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D07517552609495C0091CFB3 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = /usr/local/lib;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D049F9532720B03400D69375 /* MteDec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MteDec.swift; sourceTree = "<group>"; };
+		D049F9542720B03400D69375 /* MteBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MteBase.swift; sourceTree = "<group>"; };
+		D049F97C2720B03400D69375 /* MteEnc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MteEnc.swift; sourceTree = "<group>"; };
+		D049F98A2720B1ED00D69375 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		D049FA6F27232E1300D69375 /* MteMkeDec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MteMkeDec.swift; sourceTree = "<group>"; };
+		D049FA7027232E1300D69375 /* MteMkeEnc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MteMkeEnc.swift; sourceTree = "<group>"; };
+		D049FA7127232E1300D69375 /* MteFlenEnc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MteFlenEnc.swift; sourceTree = "<group>"; };
+		D07517572609495C0091CFB3 /* SocketServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SocketServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		D07517672609529D0091CFB3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D075181A260D0DEE0091CFB3 /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		D075181C260D0DEE0091CFB3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D075181D260D0DEE0091CFB3 /* GeneralHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralHelpers.swift; sourceTree = "<group>"; };
+		D09D29EF26F3EF7D00800813 /* SocketServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09D29F126F3EF7D00800813 /* SocketServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketServerTests.swift; sourceTree = "<group>"; };
+		D09D29F326F3EF7D00800813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7088C372A0B401F00C2F7CA /* mtesupport_ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mtesupport_ecdh.h; sourceTree = "<group>"; };
+		D7088C382A0B401F00C2F7CA /* mtesupport_wrap_ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mtesupport_wrap_ecdh.h; sourceTree = "<group>"; };
+		D7088C392A0B401F00C2F7CA /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		D7088C3D2A0B401F00C2F7CA /* EcdhP256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EcdhP256.swift; sourceTree = "<group>"; };
+		D7088C6C2A0C5FA000C2F7CA /* libmtesupport-ecdh.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libmtesupport-ecdh.a"; sourceTree = "<group>"; };
+		D721E03528D2871F00F34124 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		D721E03728D2872900F34124 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
+		D721E03928D2882400F34124 /* libmte_mteb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmte_mteb.a; path = ../MTE/lib/libmte_mteb.a; sourceTree = "<group>"; };
+		D721E03A28D2882400F34124 /* libmte_flen.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmte_flen.a; path = ../MTE/lib/libmte_flen.a; sourceTree = "<group>"; };
+		D721E03B28D2882400F34124 /* libmte_jail.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmte_jail.a; path = ../MTE/lib/libmte_jail.a; sourceTree = "<group>"; };
+		D721E03C28D2882400F34124 /* libmte_mtee.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmte_mtee.a; path = ../MTE/lib/libmte_mtee.a; sourceTree = "<group>"; };
+		D721E03D28D2882400F34124 /* libmte_wrap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmte_wrap.a; path = ../MTE/lib/libmte_wrap.a; sourceTree = "<group>"; };
+		D721E03E28D2882400F34124 /* libmte_mked.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmte_mked.a; path = ../MTE/lib/libmte_mked.a; sourceTree = "<group>"; };
+		D721E03F28D2882400F34124 /* libmte_mted.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmte_mted.a; path = ../MTE/lib/libmte_mted.a; sourceTree = "<group>"; };
+		D721E04028D2882400F34124 /* libmte_mkee.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmte_mkee.a; path = ../MTE/lib/libmte_mkee.a; sourceTree = "<group>"; };
+		D74244E32A392E29008471F3 /* ServerSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerSocketManager.swift; sourceTree = "<group>"; };
+		D74244E52A3A5270008471F3 /* MteSetupInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MteSetupInfo.swift; sourceTree = "<group>"; };
+		D74244E72A3A7E2E008471F3 /* ServerMteHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerMteHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D07517542609495C0091CFB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D721E04128D2882400F34124 /* libmte_mteb.a in Frameworks */,
+				D7088C6D2A0C5FA000C2F7CA /* libmtesupport-ecdh.a in Frameworks */,
+				D721E04228D2882400F34124 /* libmte_flen.a in Frameworks */,
+				D721E04428D2882400F34124 /* libmte_mtee.a in Frameworks */,
+				D721E04528D2882400F34124 /* libmte_wrap.a in Frameworks */,
+				D721E04628D2882400F34124 /* libmte_mked.a in Frameworks */,
+				D721E04728D2882400F34124 /* libmte_mted.a in Frameworks */,
+				D721E04828D2882400F34124 /* libmte_mkee.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09D29EC26F3EF7D00800813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D049F9522720B03400D69375 /* MTE */ = {
+			isa = PBXGroup;
+			children = (
+				D721E03728D2872900F34124 /* lib */,
+				D721E03528D2871F00F34124 /* include */,
+				D049FA7127232E1300D69375 /* MteFlenEnc.swift */,
+				D049FA6F27232E1300D69375 /* MteMkeDec.swift */,
+				D049FA7027232E1300D69375 /* MteMkeEnc.swift */,
+				D049F9532720B03400D69375 /* MteDec.swift */,
+				D049F9542720B03400D69375 /* MteBase.swift */,
+				D049F97C2720B03400D69375 /* MteEnc.swift */,
+			);
+			name = MTE;
+			path = ../MTE;
+			sourceTree = "<group>";
+		};
+		D075174E2609495C0091CFB3 = {
+			isa = PBXGroup;
+			children = (
+				D7088C352A0B401F00C2F7CA /* ecdh */,
+				D049F9522720B03400D69375 /* MTE */,
+				D0751819260D0DEE0091CFB3 /* Common */,
+				D07517592609495C0091CFB3 /* SocketServer */,
+				D09D29F026F3EF7D00800813 /* SocketServerTests */,
+				D07517582609495C0091CFB3 /* Products */,
+				D09D29F826F3F1AC00800813 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D07517582609495C0091CFB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D07517572609495C0091CFB3 /* SocketServer */,
+				D09D29EF26F3EF7D00800813 /* SocketServerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D07517592609495C0091CFB3 /* SocketServer */ = {
+			isa = PBXGroup;
+			children = (
+				D07517672609529D0091CFB3 /* main.swift */,
+				D74244E32A392E29008471F3 /* ServerSocketManager.swift */,
+				D74244E72A3A7E2E008471F3 /* ServerMteHelper.swift */,
+			);
+			path = SocketServer;
+			sourceTree = "<group>";
+		};
+		D0751819260D0DEE0091CFB3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D74244E52A3A5270008471F3 /* MteSetupInfo.swift */,
+				D049F98A2720B1ED00D69375 /* Bridging-Header.h */,
+				D075181A260D0DEE0091CFB3 /* AppSettings.swift */,
+				D075181C260D0DEE0091CFB3 /* Extensions.swift */,
+				D075181D260D0DEE0091CFB3 /* GeneralHelpers.swift */,
+			);
+			name = Common;
+			path = ../Common;
+			sourceTree = "<group>";
+		};
+		D09D29F026F3EF7D00800813 /* SocketServerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D09D29F126F3EF7D00800813 /* SocketServerTests.swift */,
+				D09D29F326F3EF7D00800813 /* Info.plist */,
+			);
+			path = SocketServerTests;
+			sourceTree = "<group>";
+		};
+		D09D29F826F3F1AC00800813 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D721E03A28D2882400F34124 /* libmte_flen.a */,
+				D721E03B28D2882400F34124 /* libmte_jail.a */,
+				D721E03E28D2882400F34124 /* libmte_mked.a */,
+				D721E04028D2882400F34124 /* libmte_mkee.a */,
+				D721E03928D2882400F34124 /* libmte_mteb.a */,
+				D721E03F28D2882400F34124 /* libmte_mted.a */,
+				D721E03C28D2882400F34124 /* libmte_mtee.a */,
+				D721E03D28D2882400F34124 /* libmte_wrap.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7088C352A0B401F00C2F7CA /* ecdh */ = {
+			isa = PBXGroup;
+			children = (
+				D7088C362A0B401F00C2F7CA /* include */,
+				D7088C3A2A0B401F00C2F7CA /* lib */,
+				D7088C3D2A0B401F00C2F7CA /* EcdhP256.swift */,
+			);
+			name = ecdh;
+			path = ../ecdh;
+			sourceTree = "<group>";
+		};
+		D7088C362A0B401F00C2F7CA /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D7088C372A0B401F00C2F7CA /* mtesupport_ecdh.h */,
+				D7088C382A0B401F00C2F7CA /* mtesupport_wrap_ecdh.h */,
+				D7088C392A0B401F00C2F7CA /* platform.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		D7088C3A2A0B401F00C2F7CA /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D7088C6C2A0C5FA000C2F7CA /* libmtesupport-ecdh.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D07517562609495C0091CFB3 /* SocketServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D075175E2609495C0091CFB3 /* Build configuration list for PBXNativeTarget "SocketServer" */;
+			buildPhases = (
+				D07517532609495C0091CFB3 /* Sources */,
+				D07517542609495C0091CFB3 /* Frameworks */,
+				D07517552609495C0091CFB3 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketServer;
+			productName = SocketServer;
+			productReference = D07517572609495C0091CFB3 /* SocketServer */;
+			productType = "com.apple.product-type.tool";
+		};
+		D09D29EE26F3EF7D00800813 /* SocketServerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D09D29F626F3EF7E00800813 /* Build configuration list for PBXNativeTarget "SocketServerTests" */;
+			buildPhases = (
+				D09D29EB26F3EF7D00800813 /* Sources */,
+				D09D29EC26F3EF7D00800813 /* Frameworks */,
+				D09D29ED26F3EF7D00800813 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketServerTests;
+			productName = SocketServerTests;
+			productReference = D09D29EF26F3EF7D00800813 /* SocketServerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D075174F2609495C0091CFB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1420;
+				ORGANIZATIONNAME = "Eclypses Inc.";
+				TargetAttributes = {
+					D07517562609495C0091CFB3 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					D09D29EE26F3EF7D00800813 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = D07517522609495C0091CFB3 /* Build configuration list for PBXProject "SocketServer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D075174E2609495C0091CFB3;
+			productRefGroup = D07517582609495C0091CFB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D07517562609495C0091CFB3 /* SocketServer */,
+				D09D29EE26F3EF7D00800813 /* SocketServerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D09D29ED26F3EF7D00800813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D721E03828D2872900F34124 /* lib in Resources */,
+				D721E03628D2871F00F34124 /* include in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D07517532609495C0091CFB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D075181E260D0DEE0091CFB3 /* AppSettings.swift in Sources */,
+				D0751820260D0DEE0091CFB3 /* Extensions.swift in Sources */,
+				D0751821260D0DEE0091CFB3 /* GeneralHelpers.swift in Sources */,
+				D74244E42A392E29008471F3 /* ServerSocketManager.swift in Sources */,
+				D049FA7227232E1300D69375 /* MteMkeDec.swift in Sources */,
+				D74244E82A3A7E2E008471F3 /* ServerMteHelper.swift in Sources */,
+				D74244E62A3A5270008471F3 /* MteSetupInfo.swift in Sources */,
+				D049FA7627232E1300D69375 /* MteFlenEnc.swift in Sources */,
+				D049F97E2720B03400D69375 /* MteBase.swift in Sources */,
+				D049F97D2720B03400D69375 /* MteDec.swift in Sources */,
+				D049F9892720B03400D69375 /* MteEnc.swift in Sources */,
+				D049FA7427232E1300D69375 /* MteMkeEnc.swift in Sources */,
+				D7088C402A0B401F00C2F7CA /* EcdhP256.swift in Sources */,
+				D07517682609529D0091CFB3 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09D29EB26F3EF7D00800813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D049FA7727232E1300D69375 /* MteFlenEnc.swift in Sources */,
+				D049FA7327232E1300D69375 /* MteMkeDec.swift in Sources */,
+				D09D29F226F3EF7D00800813 /* SocketServerTests.swift in Sources */,
+				D049F9BD2721B9BA00D69375 /* MteBase.swift in Sources */,
+				D049FA7527232E1300D69375 /* MteMkeEnc.swift in Sources */,
+				D049F9BC2721B9B700D69375 /* MteDec.swift in Sources */,
+				D049F9BE2721B9BE00D69375 /* MteEnc.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D075175C2609495C0091CFB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../MTE/include,
+					../ecdh/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../MTE/lib,
+					../ecdh/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D075175D2609495C0091CFB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../MTE/include,
+					../ecdh/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../MTE/lib,
+					../ecdh/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D075175F2609495C0091CFB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 8V98ZVB9SU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					../MTE/include,
+					../ecdh/include,
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../MTE/lib,
+					../ecdh/lib,
+				);
+				OTHER_SWIFT_FLAGS = "-DUSE_MTE_CORE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "../Common/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D07517602609495C0091CFB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 8V98ZVB9SU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					../MTE/include,
+					../ecdh/include,
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../MTE/lib,
+					../ecdh/lib,
+				);
+				OTHER_SWIFT_FLAGS = "-DUSE_MTE_CORE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "../Common/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D09D29F426F3EF7E00800813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 8V98ZVB9SU;
+				INFOPLIST_FILE = SocketServerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = ../MTE/lib;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eclypses.SocketServerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "../Common/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D09D29F526F3EF7E00800813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 8V98ZVB9SU;
+				INFOPLIST_FILE = SocketServerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = ../MTE/lib;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eclypses.SocketServerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "../Common/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D07517522609495C0091CFB3 /* Build configuration list for PBXProject "SocketServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D075175C2609495C0091CFB3 /* Debug */,
+				D075175D2609495C0091CFB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D075175E2609495C0091CFB3 /* Build configuration list for PBXNativeTarget "SocketServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D075175F2609495C0091CFB3 /* Debug */,
+				D07517602609495C0091CFB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D09D29F626F3EF7E00800813 /* Build configuration list for PBXNativeTarget "SocketServerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D09D29F426F3EF7E00800813 /* Debug */,
+				D09D29F526F3EF7E00800813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D075174F2609495C0091CFB3 /* Project object */;
+}
